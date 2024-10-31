@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GLAMS Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.glams.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="GLAMS Test Cases(failed)">
+    <classes>
+      <class name="com.glams.qa.testcases.GLAMSComponentTrackerPageTest">
+        <methods>
+          <include name="HoldAComponentJob"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.glams.qa.testcases.GLAMSComponentTrackerPageTest -->
+    </classes>
+  </test> <!-- GLAMS Test Cases(failed) -->
+</suite> <!-- Failed suite [GLAMS Test Automation Test Suite] -->

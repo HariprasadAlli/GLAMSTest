@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GLAMS Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.glams.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="GLAMS Test Cases">
+		<classes>
+			<class name="com.glams.qa.testcases.GLAMSComponentTrackerPageTest"></class>
+		</classes>
+	</test>
+</suite>

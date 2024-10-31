@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GLAMS Application Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GLAMS App Test Cases(failed)">
+    <classes>
+      <class name="com.glams.qa.testcases.DashboardPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyUserNameTest"/>
+        </methods>
+      </class> <!-- com.glams.qa.testcases.DashboardPageTest -->
+      <class name="com.glams.qa.testcases.GLAMSComponentRequestPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="allMandatoryfieldsInRequestPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.glams.qa.testcases.GLAMSComponentRequestPageTest -->
+    </classes>
+  </test> <!-- GLAMS App Test Cases(failed) -->
+</suite> <!-- Failed suite [GLAMS Application Test Suite] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GLAMS Application Test Suite">
+
+
+
+	<!-- Test cases for GLAMS Application -->
+	<test name="GLAMS App Test Cases">
+		<classes>
+			<!-- Ensure the correct package and class names are used -->
+			<class name="com.glams.qa.testcases.LoginPageTest" />
+			<class name="com.glams.qa.testcases.DashboardPageTest" />
+			<class name="com.glams.qa.testcases.GLAMSComponentRequestPageTest" />
+		</classes>
+	</test>
+</suite>
