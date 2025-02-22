@@ -31,8 +31,7 @@ public class DashboardPage extends TestBase {
 	@FindBy(xpath= "//a[@title='GLAMS Component Repository']")
 	WebElement GLAMSComponentRepository;
 	
-	
-	//adding a line
+	//deleted
 	public boolean VerifyUserNameLabel() {
 	    return UserNameLabel.isDisplayed();
 	}
