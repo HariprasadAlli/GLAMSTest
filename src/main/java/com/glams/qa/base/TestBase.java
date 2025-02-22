@@ -48,6 +48,7 @@ public class TestBase {
 
 		driver.get(prop.getProperty("url"));
 
+		
 	}
 	
 	public static void implicitwait() {

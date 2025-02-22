@@ -19,13 +19,13 @@ public class GLAMSComponentRequestPage extends TestBase {
 	@FindBy(xpath = "//input[@name='GLAMS Component Name']")
 	WebElement GLAMSComponentNameInputField;
 
-	@FindBy(xpath = "(//div[@class='k-widget k-multiselect k-header ng-scope'])[1]")
+	@FindBy(xpath = "(//*[@class='k-widget k-dropdown k-header ng-scope'])[1]")
 	WebElement ComponentTypeDropDown;
 
 	@FindBy(xpath = "//li[text()='Blister']")
 	WebElement ComponentTypeBlister;
 
-	@FindBy(xpath = "(//div[@class='k-widget k-multiselect k-header ng-scope'])[2]")
+	@FindBy(xpath = "(//div[@class='k-widget k-multiselect k-header ng-scope'])[1]")
 	WebElement CountryDropDown;
 
 	@FindBy(xpath = "//div[@class='container-fluid main-holder']")
@@ -34,17 +34,20 @@ public class GLAMSComponentRequestPage extends TestBase {
 	@FindBy(xpath = "//li[text()='Hyderabad']")
 	WebElement CountryHyderabad;
 
-	@FindBy(xpath = "(//div[@class='k-widget k-multiselect k-header ng-scope'])[3]")
+	@FindBy(xpath = "(//div[@class='k-multiselect-wrap k-floatwrap'])[2]")
 	WebElement ProductNameDropDown;
 
 	@FindBy(xpath = "//li[text()='Acular']")
 	WebElement ProductNameAcular;
 
-	@FindBy(xpath = "(//div[@class='k-widget k-multiselect k-header ng-scope'])[4]")
+	@FindBy(xpath = "(//div[@class='k-widget k-multiselect k-header ng-scope'])[3]")
 	WebElement PackagingSiteDropDown;
 
-	@FindBy(xpath = "//li[text()='CMO1']")
+	@FindBy(xpath = "(//*[text()='CMO3'])[2]")
 	WebElement PackagingSiteCMO1;
+
+	@FindBy(name = "GLAMS Comments")
+	WebElement GLAMSComm;
 
 	@FindBy(xpath = "//input[@id='ctrle67897b93ddf479cb472717579ff7616']")
 	WebElement CurrentPackagingCodeInputField;
@@ -93,6 +96,16 @@ public class GLAMSComponentRequestPage extends TestBase {
 		GLAMSClickASide();
 
 	}
+	
+	public void printsomething() {
+		System.out.println("222");
+	}
+
+	public void GLAMSComments() {
+
+		GLAMSComm.sendKeys("Comments");
+		
+	}
 
 	public void GLAMSProductNameDropDown() {
 		ProductNameDropDown.click();
@@ -115,7 +128,7 @@ public class GLAMSComponentRequestPage extends TestBase {
 	public DashboardPage GLAMSSaveSubmitbutton() {
 		SaveSubmitbutton.click();
 
-		// Ok.click();
+		Ok.click();
 		return new DashboardPage();
 
 	}
