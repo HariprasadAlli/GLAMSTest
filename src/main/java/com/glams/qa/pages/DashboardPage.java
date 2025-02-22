@@ -32,6 +32,7 @@ public class DashboardPage extends TestBase {
 	WebElement GLAMSComponentRepository;
 	
 	//deleted
+	//why deleted
 	public boolean VerifyUserNameLabel() {
 	    return UserNameLabel.isDisplayed();
 	}
